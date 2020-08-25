@@ -4,7 +4,7 @@ sort_key: B
 ---
 <!-- TODO: Maybe move? -->
 
-Go Cyberium (as its name implies) is written in [Go](https://golang.org), and as such to build from source code you need to have a Go version as recent as possible. This guide does not go into details on how to install Go itself, for that please read the [Go installation instructions](https://golang.org/doc/install).
+Cyberium (as its name implies) is written in [Go](https://golang.org), and as such to build from source code you need to have a Go version as recent as possible. This guide does not go into details on how to install Go itself, for that please read the [Go installation instructions](https://golang.org/doc/install).
 
 Assuming you have Go installed, you can download our project via:
 
@@ -12,7 +12,7 @@ Assuming you have Go installed, you can download our project via:
 go get -d github.com/Cyberiums/cyberium
 ```
 
-The above command will checkout the default version of Go Cyberium into your local `GOPATH` work space, but it will not build any executables for you. To do that you can either build one specifically:
+The above command will checkout the default version of Cyberium into your local `GOPATH` work space, but it will not build any executables for you. To do that you can either build one specifically:
 
     go install github.com/Cyberiums/cyberium/cmd/geth
 

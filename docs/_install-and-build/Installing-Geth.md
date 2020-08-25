@@ -123,7 +123,7 @@ We create the following standalone bundles:
 
 We provide archives containing only Geth, and archives containing Geth along with the developer tools from our repository (`abigen`, `bootnode`, `disasm`, `evm`, `rlpdump`). Read our [`README`](https://github.com/Cyberiums/cyberium#executables) for more information about these executables.
 
-Download these bundles from the [Go Cyberium Downloads](https://geth.ethereum.org/downloads) page.
+Download these bundles from the [Cyberium Downloads](https://geth.ethereum.org/downloads) page.
 
 ## Run inside Docker container
 
@@ -161,7 +161,7 @@ _Note, if you are running an Cyberium client inside a Docker container, you shou
 
 ### Most Linux systems and macOS
 
-Go Cyberium is written in [Go](https://golang.org), so to build from source code you need the most recent version of Go. This guide doesn't cover how to install Go itself, for details read the [Go installation instructions](https://golang.org/doc/install) and grab any needed bundles from the [Go download page](https://golang.org/dl/).
+Cyberium is written in [Go](https://golang.org), so to build from source code you need the most recent version of Go. This guide doesn't cover how to install Go itself, for details read the [Go installation instructions](https://golang.org/doc/install) and grab any needed bundles from the [Go download page](https://golang.org/dl/).
 
 With Go installed, you can download the project into you `GOPATH` workspace via:
 
