@@ -30,12 +30,12 @@ collections:
     caption: Getting Started
     sidebar_index: 1
     frontpage: _getting-started/index.md
-  install-and-build:
+  signup-and-start:
     output: true
     permalink: docs/:collection/:slug
     caption: Install and Build
     sidebar_index: 2
-    frontpage: _install-and-build/Installing-Geth.md
+    frontpage: _signup-and-start/signup-studio-account.md
   interface:
     output: true
     permalink: docs/:collection/:slug

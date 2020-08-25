@@ -113,9 +113,9 @@ killall -QUIT geth
 
 This will dump stack traces for each instance to their respective log file.
 
-[install-guide]: ../install-and-build/installing-geth
+[install-guide]: ../signup-and-start/installing-geth
 [code-review]: ../developers/code-review-guidelines
-[cross-compile]: ../install-and-build/cross-compile
+[cross-compile]: ../signup-and-start/cross-compile
 [go-modules]: https://github.com/golang/go/wiki/Modules
 [discord]: https://discord.gg/nthXNEv
 [go-install]: https://golang.org/doc/install

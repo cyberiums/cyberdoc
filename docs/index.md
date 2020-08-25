@@ -6,7 +6,7 @@ root: ..
 You have found the user manual for geth, the Go language implementation of Cyberium.
 
 * [Getting Started Guide](./getting-started)
-* [Installation Instructions](./install-and-build/installing-geth)
+* [Installation Instructions](./signup-and-start/installing-geth)
 * [JSON-RPC Server](./rpc/server)
 * [JavaScript Console](./interface/javascript-console)
 
