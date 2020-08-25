@@ -1,5 +1,5 @@
 ---
-title: Installing Geth
+title: Register for account
 sort_key: A
 ---
 
@@ -29,7 +29,7 @@ You can install the master branch using the `--devel` parameter:
 brew install ethereum --devel
 ```
 
-The `abigen`, `bootnode`, `checkpoint-admin`, `clef`, `devp2p`, `ethkey`, `evm`, `faucet`, `geth`, `p2psim`, `puppeth`, `rlpdump`, and `wnode` commands are then available on your system in `/usr/local/bin/`. 
+The `abigen`, `bootnode`, `checkpoint-admin`, `clef`, `devp2p`, `ethkey`, `evm`, `faucet`, `geth`, `p2psim`, `puppeth`, `rlpdump`, and `wnode` commands are then available on your system in `/usr/local/bin/`.
 
 Find the different options and commands available with `geth --help`.
 
