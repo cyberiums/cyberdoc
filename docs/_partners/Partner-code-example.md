@@ -1,5 +1,5 @@
 ---
-title: Whisper JavaScript example
+title: Partner Code example
 sort_key: B
 ---
 
