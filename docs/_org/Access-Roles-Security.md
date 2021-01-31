@@ -1,5 +1,6 @@
 ---
-title: Cyberium on Android
+title: Access, Roles & Security
+sort_key: C
 ---
 Building Geth Flavours for Android is a non trivial task, as it requires cross compiling external C dependencies ([GNU Arithmetic Library](https://gmplib.org/)); internal C dependencies ([ethash](https://github.com/ethereum/ethash)); as well as the entire CGO enabled Go code-base to Android. This is further complicated by the Position Independent Executables (PIE) security feature introduced since Android 4.1 Jelly Bean, requiring different compiler and linker options based on the target Android platform version.
 

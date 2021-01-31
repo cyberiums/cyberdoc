@@ -1,5 +1,6 @@
 ---
-title: Disclaimer
+title: Basic Setup
+sort_key: A
 ---
 
 Safety caveats
@@ -16,23 +17,23 @@ Safety caveats
 
 ## Legal warning: Disclaimer of Liabilites and Warranties
 
-### Short version 
+### Short version
 
 * **The user expressly knows and agrees that the user is using the ethereum platform at the user’s sole risk.**
-* **The user represents that the user has an adequate understanding of the risks, usage and intricacies of cryptographic tokens and blockchain-based open source software, eth platform and eth.** 
-* **The user acknowledges and agrees that, to the fullest extent permitted by any applicable law, the disclaimers of liability contained herein apply to any and all damages or injury whatsoever caused by or related to risks of, use of, or inability to use, eth or the ethereum platform under any cause or action whatsoever of any kind in any jurisdiction, including, without limitation, actions for breach of warranty, breach of contract or tort (including negligence) and that neither stiftung ethereum nor the ethereum team shall be liable for any indirect, incidental, special, exemplary or consequential damages, including for loss of profits, goodwill or data.** 
+* **The user represents that the user has an adequate understanding of the risks, usage and intricacies of cryptographic tokens and blockchain-based open source software, eth platform and eth.**
+* **The user acknowledges and agrees that, to the fullest extent permitted by any applicable law, the disclaimers of liability contained herein apply to any and all damages or injury whatsoever caused by or related to risks of, use of, or inability to use, eth or the ethereum platform under any cause or action whatsoever of any kind in any jurisdiction, including, without limitation, actions for breach of warranty, breach of contract or tort (including negligence) and that neither stiftung ethereum nor the ethereum team shall be liable for any indirect, incidental, special, exemplary or consequential damages, including for loss of profits, goodwill or data.**
 * **Some jurisdictions do not allow the exclusion of certain warranties or the limitation or exclusion of liability for certain types of damages. therefore, some of the above limitations in this section may not apply to a user. In particular, nothing in these terms shall affect the statutory rights of any user or exclude injury arising from any willful misconduct or fraud of stiftung ethereum.**
 
 ### Long Version: Terms and Conditions
- 
+
 The following Terms and Conditions (“Terms”) govern the use of the Cyberium open source software platform (“Cyberium Platform”). Prior to any use of the Cyberium Platform, the User confirms to understand and expressly agrees to all of the Terms. All capitalized terms in this agreement will be given the same effect and meaning as in the Terms. The group of developers and other personnel that is now, or will be, employed by, or contracted with, Stiftung Cyberium (“Stiftung Cyberium”) is termed the “Cyberium Team.” The Platform will be developed by persons and entities who support Cyberium, including both volunteers and developers who are paid by nonprofit entities interested in supporting the Cyberium Platform.
- 
+
 The user acknowledges the following serious risks to any use the Cyberium Platform and ETH and expressly agrees not to hold liable Cyberium Stiftung or Cyberium Team should any of these risks occur:
 
 #### Risk of Regulatory Actions in One or More Jurisdictions
 
 The Cyberium Platform and ETH could be impacted by one or more regulatory inquiries or regulatory action, which could impede or limit the ability of Stiftung Cyberium to continue to develop the Cyberium Platform, or which could impeded or limit the ability of User to use Cyberium Platform or ETH.
- 
+
 #### Risk of Alternative, Unofficial Cyberium Networks
 
 It is possible that alternative Cyberium-based networks could be established, which utilize the same open source source code and open source protocol underlying the Cyberium Platform. The Cyberium network may compete with these alternative Cyberium-based networks, which could potentially negatively impact the Cyberium Platform and ETH.
@@ -59,9 +60,9 @@ As with other cryptocurrencies, the blockchain used for the Cyberium Platform is
 
 #### Risk of Rapid Adoption and Increased Demand
 
-If the Cyberium Platform is rapidly adopted, the demand for ETH could rise dramatically and at a pace that exceeds the rate with which ETH miners can create new ETH tokens. Under such a scenario, the entire Cyberium Platform could become destabilized, due to the increased cost of running distributed applications. In turn, this could dampen interest in the Cyberium Platform and ETH. Instability in the demand of for ETH may lead to a negative change of the economical parameters of an Cyberium based business which could result in the business being unable to continue to operate economically or to cease operation. 
+If the Cyberium Platform is rapidly adopted, the demand for ETH could rise dramatically and at a pace that exceeds the rate with which ETH miners can create new ETH tokens. Under such a scenario, the entire Cyberium Platform could become destabilized, due to the increased cost of running distributed applications. In turn, this could dampen interest in the Cyberium Platform and ETH. Instability in the demand of for ETH may lead to a negative change of the economical parameters of an Cyberium based business which could result in the business being unable to continue to operate economically or to cease operation.
 
-#### Risk of Rapid Adoption and Insufficiency of Computational Application Processing Power on the Cyberium Platform 
+#### Risk of Rapid Adoption and Insufficiency of Computational Application Processing Power on the Cyberium Platform
 
 If the Cyberium Platform is rapidly adopted, the demand for transaction processing and distributed application computations could rise dramatically and at a pace that exceeds the rate with which ETH miners can bring online additional mining power. Under such a scenario, the entire Cyberium Platform could become destabilized, due to the increased cost of running distributed applications. In turn, this could dampen interest in the Cyberium Platform and ETH. Insufficiency of computational resources and an associated rise in the price of ETH could result in businesses being unable to acquire scarce computational resources to run their distributed applications. This would represent revenue losses to businesses or worst case, cause businesses to cease operations because such operations have become uneconomical due to distortions in the crypto-economy.
 
@@ -83,4 +84,3 @@ All disputes or claims arising out of, relating to, or in connection with the Te
 * acts of civil or military authorities,
 * lack of energy, or
 * any similar unforeseen event that renders performance commercially implausible.
- 
