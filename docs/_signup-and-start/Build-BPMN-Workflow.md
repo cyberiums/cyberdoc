@@ -1,6 +1,6 @@
 ---
-title: Build from source
-sort_key: B
+title: Frontend: Draw BPMN Workflow Diagram
+sort_key: C
 ---
 <!-- TODO: Maybe move? -->
 

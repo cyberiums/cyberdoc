@@ -76,3 +76,9 @@ collections:
     caption: Building Exchange & Partnerships
     sidebar_index: 9
     frontpage: _partners/Whisper-Overview.md
+  org:
+    output: true
+    permalink: docs/:collection/:slug
+    caption: Setup Organization
+    sidebar_index: 9
+    frontpage: _org/Organization-Overview.md
