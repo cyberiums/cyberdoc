@@ -21,7 +21,7 @@ Wnode (whisper node) is a command-line diagnostic tool. It does not have a nice 
 
 ## Flags & Switches
 
-In case an argument is missing, `wnode` will either use the default value or prompt the user at startup. For security reasons, it is not possible to provide passwords in command-line arguments. In `test` mode, a hardcoded password ("test") is used.
+In case an argument is missing, `wnode` wil l either use the default value or prompt the user at startup. For security reasons, it is not possible to provide passwords in command-line arguments. In `test` mode, a hardcoded password ("test") is used.
 
 `-asym`: use asymmetric encryption in the chat
 
