@@ -1,5 +1,5 @@
 ---
-title: How to Whisper
+title: How to Partner
 sort_key: B
 ---
 

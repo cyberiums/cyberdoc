@@ -62,11 +62,11 @@ collections:
     output: true
     permalink: docs/:collection/:slug
     caption: Wallets
-    frontpage: _wallet/devguide.md
+    frontpage: _wallet/genguide.md
     sidebar_index: 9
   partners:
     output: true
     permalink: docs/:collection/:slug
     caption: Building Exchange & Partnerships
     sidebar_index: 10
-    frontpage: _partners/Whisper-Overview.md
+    frontpage: _partners/Partner-Overview.md

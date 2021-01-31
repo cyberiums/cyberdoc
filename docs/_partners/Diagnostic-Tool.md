@@ -1,5 +1,5 @@
 ---
-title: Diagnostic tool wnode
+title: Diagnostic tools
 sort_key: B
 ---
 
@@ -18,7 +18,7 @@ Wnode (whisper node) is a command-line diagnostic tool. It does not have a nice 
 ```
 > wnode [flags/arguments]
 ```
-	
+
 ## Flags & Switches
 
 In case an argument is missing, `wnode` will either use the default value or prompt the user at startup. For security reasons, it is not possible to provide passwords in command-line arguments. In `test` mode, a hardcoded password ("test") is used.
@@ -106,7 +106,7 @@ Connected to peer.
 
 ### Persistent ID
 
-Upon restarting the bootstrap node, its enode will be different, because the ID is randomly generated. For persistence accross restarts, it is possible to specify an ID stored in a file using the 'idfile' argument. 
+Upon restarting the bootstrap node, its enode will be different, because the ID is randomly generated. For persistence accross restarts, it is possible to specify an ID stored in a file using the 'idfile' argument.
 
 Generating ID:
 
@@ -117,13 +117,13 @@ b3651aff593ef395ee7c16f3ca681830f7d8d0b2729cf472b14f2c4ebe833aa0
 ```
 
 `pk1.txt` now contains the key used to generate the ID.
-	
+
 Starting the bootstrap node with a persistent ID:
 
 ```
 bootnode $ wnode -forwarder -standalone -ip=127.0.0.1:30379 -idfile=pk1.txt
 my public key: 0x04be81a00a90f5c21ead8887eaa254b3f7a37e06f8f2d776dcc46954a228bc50c6fb6dfd155f7e44e6fef9b62fdf6dad041759b864d2cbe4089b6f5c16a817ff46	enode://7d13360f5b1ddcf6947f244639113597a863abba0589d2fa5fffb2816ead0acea6211d5778a8be648e45e81ed881f4c1f5c9bbbf0e79065dfb54bcd97de3beab@127.0.0.1:30379
-	Filter is configured for the topic: 5a4ea131 
+	Filter is configured for the topic: 5a4ea131
 	Bootstrap Whisper node started
 ```
 
@@ -132,7 +132,7 @@ Now you can always use the same command to connect to your bootstrap node:
 ```
 othernode $ wnode -test -boot=enode://7d13360f5b1ddcf6947f244639113597a863abba0589d2fa5fffb2816ead0acea6211d5778a8be648e45e81ed881f4c1f5c9bbbf0e79065dfb54bcd97de3beab@127.0.0.1:30379
 ```
-	
+
 Be aware that the ID is stored unencrypted. This feature should only be used for test purposes.
 
 In order to set up a bootstrap node on a server with a dedicated IP address, its IP and port need to be specified explicitly:
@@ -173,7 +173,7 @@ hello world!
 
 1493061848 <031792461900245c6919c4b23447ef8ba43f79a2>: hello world!
 ```
-	
+
 The first number (1493061848) is UNIX timestamp. This format is useful for Mail Client/Server tests. The number in brackets is the ID with which the message is signed. Seeing an ID with only zeros means the message is not signed, although encrypted with the right key. Another `wnode` peer will show the same output:
 
 ```
@@ -189,7 +189,7 @@ Using asymmetric encryption is as simple as using the `-asym` flag:
 ```
 othernode $ wnode -topic=a6fcb30d -asym -boot=enode://d25474361659861e9e651bc728a17e807a3359ca0d344afd544ed0f11a31faecaf4d74b55db53c6670fd624f08d5c79adfc8da5dd4a11b9213db49a3b750845e@52.178.209.125:30379
 
-my public key: 0x0405007821171295a716c9d091371e836e98a5206d5b9ce9177df90c83fc308ebae2786a9c7bff999ad83d12be08e597d4b5a5240f3bb0bc366f008b7d0908df8a 
+my public key: 0x0405007821171295a716c9d091371e836e98a5206d5b9ce9177df90c83fc308ebae2786a9c7bff999ad83d12be08e597d4b5a5240f3bb0bc366f008b7d0908df8a
 enode://efe233263c78482111ba6c058ccc69b7a2ea3372774733def4fd5a357dfbaa67657e665078d573f11876fd2b7d75d41926976f41e257f91b486e9d36f4143c8a@[::]:42562
 Whisper node started
 Connected to peer.
@@ -226,7 +226,7 @@ It is possible to send a file directly by typing its path. For example:
 ```
 > /home/tester/tmp/msg/aa6f339e830c86718ddf4254038dd9fa8da6494e3f3c856af500a5aeaf0df62d
 ```
-	
+
 Asymmetric encryption is also available in file exchange mode by providing the `asym` flag.
 
 ### Mail Server & Client
@@ -260,7 +260,7 @@ You will be prompted to enter the time range of the archived messages you want t
 ```
 Please enter the lower limit of the time range (unix timestamp): 1493127000
 Please enter the upper limit of the time range (unix timestamp): 1493127099
-Please enter the topic (hexadecimal): 
+Please enter the topic (hexadecimal):
 ```
 
 You can leave the topic empty for now, in which case all the messages will be delivered, regardless of the topic.
