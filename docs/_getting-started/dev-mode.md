@@ -1,5 +1,5 @@
 ---
-title: Dev mode
+title: Apps
 sort_key: B
 ---
 

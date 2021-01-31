@@ -1,5 +1,5 @@
 ---
-title: Private Network Tutorial
+title: Wallets
 sort_key: B
 ---
 
@@ -41,7 +41,7 @@ a service) to construct the enode url.
 
 Now you can launch a second node with:
 
-    geth --datadir="/tmp/eth/60/02" --verbosity 6 --ipcdisable --port 30302 --rpcport 8102 console 2>> /tmp/eth/60/02.log 
+    geth --datadir="/tmp/eth/60/02" --verbosity 6 --ipcdisable --port 30302 --rpcport 8102 console 2>> /tmp/eth/60/02.log
 
 If you want to connect this instance to the previously started node you can add it as a
 peer from the console with `admin.addPeer(enodeUrlOfFirstInstance)`.
@@ -50,7 +50,7 @@ You can test the connection by typing in geth console:
 
     > net.listening
     true
-    > net.peerCount 
+    > net.peerCount
     1
     > admin.peers
     ...
@@ -62,7 +62,7 @@ be scripted including account creation which is needed for mining. See
 [`gethcluster.sh`](https://github.com/ethersphere/eth-utils) script, and the README there
 for usage and examples.
 
-## Private network 
+## Private network
 
 See [[the Private Network Page|Private network]] for more information.
 
