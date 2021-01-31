@@ -4,7 +4,7 @@ sort_key: D
 ---
 <!-- TODO: Maybe move? -->
 
-Cyberium (as its name implies) is written in [Go](https://golang.org), and as such to build from source code you need to have a Go version as recent as possible. This guide does not go into details on how to install Go itself, for that please read the [Go installation instructions](https://golang.org/doc/install).
+Cyberium version as recent as possible. This guide does not go into details on how to install Go itself, for that please read the [Go installation instructions](https://golang.org/doc/install).
 
 Assuming you have Go installed, you can download our project via:
 
