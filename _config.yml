@@ -45,37 +45,37 @@ collections:
   interface:
     output: true
     permalink: docs/:collection/:slug
-    caption: Using Geth Flavours
+    caption: Blockchain- Geth Flavours
     sidebar_index: 4
   interface2:
     output: true
     permalink: docs/:collection/:slug
-    caption: Using Fabric Flavours
+    caption: Blockchain- Fabric Flavours
     sidebar_index: 5
+  bandwidth:
+    output: true
+    permalink: docs/:collection/:slug
+    caption: Creating Ultra High Bandwidth
+    sidebar_index: 6
+    frontpage: _bandwidth/Tutorial.md
   app:
     output: true
     permalink: docs/:collection/:slug
     caption: For App Developers
     frontpage: _app/native.md
-    sidebar_index: 6
+    sidebar_index: 7
   public:
     output: true
     permalink: docs/:collection/:slug
     caption: Hosting Public App
     frontpage: _public/server.md
-    sidebar_index: 7
+    sidebar_index: 8
   wallet:
     output: true
     permalink: docs/:collection/:slug
     caption: Wallets
     frontpage: _wallet/devguide.md
-    sidebar_index: 8
-  bandwidth:
-    output: true
-    permalink: docs/:collection/:slug
-    caption: Creating Ultra High Bandwidth
     sidebar_index: 9
-    frontpage: _bandwidth/Tutorial.md
   partners:
     output: true
     permalink: docs/:collection/:slug
