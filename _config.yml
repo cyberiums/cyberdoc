@@ -33,7 +33,7 @@ collections:
   signup-and-start:
     output: true
     permalink: docs/:collection/:slug
-    caption: Install and Build
+    caption: Signup and Build
     sidebar_index: 2
     frontpage: _signup-and-start/signup-studio-account.md
   interface:

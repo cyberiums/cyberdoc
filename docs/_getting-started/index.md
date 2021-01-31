@@ -9,7 +9,7 @@ of ways. These include installing it via your favorite package manager; download
 standalone pre-built binary; running as a docker container; or building it yourself.
 
 For this tutorial, we'll assume you are comfortable with downloading a pre-built binary.
-Head over to the [install and build](./signup-and-start/installing-geth) section and
+Head over to the [Signup and Build](./signup-and-start/building-apps) section and
 follow the instructions for your operating system if you wish to use a different
 installation method.
 
