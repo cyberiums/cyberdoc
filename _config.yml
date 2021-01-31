@@ -52,11 +52,11 @@ collections:
     caption: For App Developers
     frontpage: _app/native.md
     sidebar_index: 5
-  rpc:
+  public:
     output: true
     permalink: docs/:collection/:slug
     caption: JSON RPC APIs
-    frontpage: _rpc/server.md
+    frontpage: _public/server.md
     sidebar_index: 6
   developers:
     output: true
