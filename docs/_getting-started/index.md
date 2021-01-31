@@ -1,10 +1,10 @@
 ---
-title: Getting Started with Geth Flavours
+title: Getting Started with Cyberium
 permalink: docs/getting-started
 sort_key: A
 ---
 
-To use Geth Flavours, you need to install it first. You can install the geth software in a variety
+To use Cyberium, you need to install it first. You can install the geth software in a variety
 of ways. These include installing it via your favorite package manager; downloading a
 standalone pre-built binary; running as a docker container; or building it yourself.
 
