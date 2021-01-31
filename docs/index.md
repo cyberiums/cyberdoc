@@ -1,5 +1,5 @@
 ---
-title: Geth Documentation
+title: Studio Documentation
 root: ..
 ---
 
