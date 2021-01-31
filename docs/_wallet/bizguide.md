@@ -1,5 +1,5 @@
 ---
-title: Code Review Guidelines
+title: Business Money Builder Guide
 sort_key: B
 ---
 
@@ -76,11 +76,11 @@ Template:
 
 ```text
 package/path: change XYZ
- 
+
 Longer explanation of the change in the commit. You can use
 multiple sentences here. It's usually best to include content
 from the PR description in the final commit message.
- 
+
 issue notices, e.g. "Fixes #42353".
 ```
 
@@ -97,7 +97,7 @@ with those:
   submit the refactoring as an independent PR, or at least as an independent commit in the
   same PR.
 
-* Author keeps rejecting your feedback: reviewers have authority to reject any change for technical reasons. If you're unsure, ask the team for a second opinion. You may close the PR if no consensus can be reached. 
+* Author keeps rejecting your feedback: reviewers have authority to reject any change for technical reasons. If you're unsure, ask the team for a second opinion. You may close the PR if no consensus can be reached.
 
 [effgo]: https://golang.org/doc/effective_go.html
 [revcomment]: https://github.com/golang/go/wiki/CodeReviewComments

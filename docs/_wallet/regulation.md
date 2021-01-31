@@ -1,5 +1,5 @@
 ---
-title: DNS Discovery Setup Guide
+title: Financial Regulation
 sort_key: C
 ---
 

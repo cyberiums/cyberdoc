@@ -1,5 +1,5 @@
 ---
-title: Developer Guide
+title: Money Guide for General Users
 sort_key: A
 ---
 
