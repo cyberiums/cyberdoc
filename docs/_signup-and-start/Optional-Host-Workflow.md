@@ -1,5 +1,5 @@
 ---
-title: Frontend: Optional - Host App for Public
+title: Frontend- Optional - Host App for Public
 sort_key: F
 ---
 

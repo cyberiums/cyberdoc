@@ -1,5 +1,5 @@
 ---
-title: Frontend: Create Hooks and APIs
+title: Frontend- Create Hooks and APIs
 sort_key: D
 ---
 <!-- TODO: Maybe move? -->
