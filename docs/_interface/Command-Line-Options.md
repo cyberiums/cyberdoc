@@ -1,5 +1,5 @@
 ---
-title: Command-line Options
+title: Geth Ecosystem Overview
 sort_key: A
 ---
 
@@ -12,10 +12,10 @@ NAME:
 
 USAGE:
    geth [options] command [command options] [arguments...]
-   
+
 VERSION:
    1.9.19-stable-3e064192
-   
+
 COMMANDS:
    account                            Manage accounts
    attach                             Start an interactive JavaScript environment (connect to node)
@@ -40,7 +40,7 @@ COMMANDS:
    version                            Print version numbers
    wallet                             Manage Cyberium presale wallets
    help, h                            Shows a list of commands or help for one command
-   
+
 ETHEREUM OPTIONS:
   --config value                      TOML configuration file
   --datadir value                     Data directory for the databases and keystore (default: "~/.ethereum")
@@ -61,7 +61,7 @@ ETHEREUM OPTIONS:
   --identity value                    Custom node name
   --lightkdf                          Reduce key-derivation RAM & CPU usage at some expense of KDF strength
   --whitelist value                   Comma separated block number-to-hash mappings to enforce (<number>=<hash>)
-  
+
 LIGHT CLIENT OPTIONS:
   --light.serve value                 Maximum percentage of time allowed for serving LES requests (multi-threaded processing allows values over 100) (default: 0)
   --light.ingress value               Incoming bandwidth limit for serving light clients (kilobytes/sec, 0 = unlimited) (default: 0)
@@ -71,11 +71,11 @@ LIGHT CLIENT OPTIONS:
   --ulc.fraction value                Minimum % of trusted ultra-light servers required to announce a new head (default: 75)
   --ulc.onlyannounce                  Ultra light server sends announcements only
   --light.nopruning                   Disable ancient light chain data pruning
-  
+
 DEVELOPER CHAIN OPTIONS:
   --dev                               Ephemeral proof-of-authority network with a pre-funded developer account, mining enabled
   --dev.period value                  Block period to use in developer mode (0 = mine only if transaction pending) (default: 0)
-  
+
 ETHASH OPTIONS:
   --ethash.cachedir value             Directory to store the ethash verification caches (default = inside the datadir)
   --ethash.cachesinmem value          Number of recent ethash caches to keep in memory (16MB each) (default: 2)
@@ -85,7 +85,7 @@ ETHASH OPTIONS:
   --ethash.dagsinmem value            Number of recent ethash mining DAGs to keep in memory (1+GB each) (default: 1)
   --ethash.dagsondisk value           Number of recent ethash mining DAGs to keep on disk (1+GB each) (default: 2)
   --ethash.dagslockmmap               Lock memory maps for recent ethash mining DAGs
-  
+
 TRANSACTION POOL OPTIONS:
   --txpool.locals value               Comma separated accounts to treat as locals (no flush, priority inclusion)
   --txpool.nolocals                   Disables price exemptions for locally submitted transactions
@@ -98,7 +98,7 @@ TRANSACTION POOL OPTIONS:
   --txpool.accountqueue value         Maximum number of non-executable transaction slots permitted per account (default: 64)
   --txpool.globalqueue value          Maximum number of non-executable transaction slots for all accounts (default: 1024)
   --txpool.lifetime value             Maximum amount of time non-executable transaction are queued (default: 3h0m0s)
-  
+
 PERFORMANCE TUNING OPTIONS:
   --cache value                       Megabytes of memory allocated to internal caching (default = 4096 mainnet full node, 128 light mode) (default: 1024)
   --cache.database value              Percentage of cache memory allowance to use for database io (default: 50)
@@ -108,13 +108,13 @@ PERFORMANCE TUNING OPTIONS:
   --cache.gc value                    Percentage of cache memory allowance to use for trie pruning (default = 25% full mode, 0% archive mode) (default: 25)
   --cache.snapshot value              Percentage of cache memory allowance to use for snapshot caching (default = 10% full mode, 20% archive mode) (default: 10)
   --cache.noprefetch                  Disable heuristic state prefetch during block import (less CPU and disk IO, more time waiting for data)
-  
+
 ACCOUNT OPTIONS:
   --unlock value                      Comma separated list of accounts to unlock
   --password value                    Password file to use for non-interactive password input
   --signer value                      External signer (url or path to ipc file)
   --allow-insecure-unlock             Allow insecure account unlocking when account-related RPCs are exposed by http
-  
+
 API AND CONSOLE OPTIONS:
   --ipcdisable                        Disable the IPC-RPC server
   --ipcpath value                     Filename for IPC socket/pipe within the datadir (explicit paths escape it)
@@ -137,7 +137,7 @@ API AND CONSOLE OPTIONS:
   --jspath loadScript                 JavaScript root path for loadScript (default: ".")
   --exec value                        Execute JavaScript statement
   --preload value                     Comma separated list of JavaScript files to preload into the console
-  
+
 NETWORKING OPTIONS:
   --bootnodes value                   Comma separated enode URLs for P2P discovery bootstrap
   --bootnodesv4 value                 Comma separated enode URLs for P2P v4 discovery bootstrap (light server, full nodes) (deprecated, use --bootnodes)
@@ -152,7 +152,7 @@ NETWORKING OPTIONS:
   --netrestrict value                 Restricts network communication to the given IP networks (CIDR masks)
   --nodekey value                     P2P node key file
   --nodekeyhex value                  P2P node key as hex (for testing)
-  
+
 MINER OPTIONS:
   --mine                              Enable mining
   --miner.threads value               Number of CPU threads to use for mining (default: 0)
@@ -164,16 +164,16 @@ MINER OPTIONS:
   --miner.extradata value             Block extra data set by the miner (default = client version)
   --miner.recommit value              Time interval to recreate the block being mined (default: 3s)
   --miner.noverify                    Disable remote sealing verification
-  
+
 GAS PRICE ORACLE OPTIONS:
   --gpo.blocks value                  Number of recent blocks to check for gas prices (default: 20)
   --gpo.percentile value              Suggested gas price is the given percentile of a set of recent transaction gas prices (default: 60)
-  
+
 VIRTUAL MACHINE OPTIONS:
   --vmdebug                           Record information useful for VM and contract debugging
   --vm.evm value                      External EVM configuration (default = built-in interpreter)
   --vm.ewasm value                    External ewasm configuration (default = built-in interpreter)
-  
+
 LOGGING AND DEBUGGING OPTIONS:
   --fakepow                           Disables proof-of-work verification
   --nocompaction                      Disables db compaction after import
@@ -188,7 +188,7 @@ LOGGING AND DEBUGGING OPTIONS:
   --pprof.blockprofilerate value      Turn on block profiling with the given rate (default: 0)
   --pprof.cpuprofile value            Write CPU profile to the given file
   --trace value                       Write execution trace to the given file
-  
+
 METRICS AND STATS OPTIONS:
   --metrics                           Enable metrics collection and reporting
   --metrics.expensive                 Enable expensive metrics collection and reporting
@@ -200,13 +200,13 @@ METRICS AND STATS OPTIONS:
   --metrics.influxdb.username value   Username to authorize access to the database (default: "test")
   --metrics.influxdb.password value   Password to authorize access to the database (default: "test")
   --metrics.influxdb.tags value       Comma-separated InfluxDB tags (key/values) attached to all measurements (default: "host=localhost")
-  
+
 WHISPER (EXPERIMENTAL) OPTIONS:
   --shh                               Enable Whisper
   --shh.maxmessagesize value          Max message size accepted (default: 1048576)
   --shh.pow value                     Minimum POW accepted (default: 0.2)
   --shh.restrict-light                Restrict connection between two whisper light clients
-  
+
 ALIASED (deprecated) OPTIONS:
   --rpc                               Enable the HTTP-RPC server (deprecated, use --http)
   --rpcaddr value                     HTTP-RPC server listening interface (deprecated, use --http.addr) (default: "localhost")
@@ -227,11 +227,11 @@ ALIASED (deprecated) OPTIONS:
   --memprofilerate value              Turn on memory profiling with the given rate (deprecated, use --pprof.memprofilerate) (default: 524288)
   --blockprofilerate value            Turn on block profiling with the given rate (deprecated, use --pprof.blockprofilerate) (default: 0)
   --cpuprofile value                  Write CPU profile to the given file (deprecated, use --pprof.cpuprofile)
-  
+
 MISC OPTIONS:
   --snapshot                          Enables snapshot-database mode -- experimental work in progress feature
   --help, -h                          show help
-  
+
 
 COPYRIGHT:
    Copyright 2013-2020 The cyberium Authors

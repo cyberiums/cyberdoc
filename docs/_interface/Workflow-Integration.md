@@ -1,6 +1,6 @@
 ---
-title: Private Networks
-sort_key: B
+title: Workflow Integration
+sort_key: E
 ---
 
 This guide explains how to set up a private network of multiple Geth Flavours nodes. An Cyberium

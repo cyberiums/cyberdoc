@@ -1,10 +1,10 @@
 ---
-title: Managing Your Accounts
-sort_key: B
+title: Smart Contracts
+sort_key: C
 ---
 
 **WARNING**
-Remember your password. 
+Remember your password.
 
 If you lose the password you use to encrypt your account, you will not be able to access that account.
 Repeat: It is NOT possible to access your account without a password and there is no _forgot my password_ option here. Do not forget it.
@@ -69,7 +69,7 @@ Accounts can also be managed via the [Javascript Console](../interface/javascrip
 ## Examples
 ### Interactive use
 
-#### creating an account 
+#### creating an account
 
 ```
 $ geth account new
@@ -113,7 +113,7 @@ Repeat Passphrase:
 0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b
 ```
 
-### Non-interactive use 
+### Non-interactive use
 
 You supply a plaintext password file as argument to the `--password` flag. The data in the
 file consists of the raw characters of the password, followed by a single newline.
@@ -122,7 +122,7 @@ file consists of the raw characters of the password, followed by a single newlin
 but you can always use shell trickery to get round this restriction.
 
 ```
-$ geth account new --password /path/to/password 
+$ geth account new --password /path/to/password
 
 $ geth account import  --datadir /someOtherEthDataDir --password /path/to/anotherpassword ./key.prv
 ```
@@ -158,7 +158,7 @@ your account in the future.
 For non-interactive use the passphrase can be specified with the `--password` flag:
 
 ```
-geth account new --password <passwordfile> 
+geth account new --password <passwordfile>
 ```
 
 Note, this is meant to be used for testing only, it is a bad idea to save your
@@ -198,7 +198,7 @@ order or doublecheck and update the indexes used in your scripts.
 is not readable or even listable for anyone but you. You achieve this with:
 
 ```
-touch /path/to/password 
+touch /path/to/password
 chmod 700 /path/to/password
 cat > /path/to/password
 >I type my pass here^D
@@ -246,10 +246,10 @@ Account #0: {5afdd78bdacb56ab1dad28741ea2a0e47fe41331} keystore:///tmp/mykeystor
 Account #1: {9acb9ff906641a434803efb474c96a837756287f} keystore:///tmp/mykeystore/UTC--2017-04-28T08-46-52.180688336Z--9acb9ff906641a434803efb474c96a837756287f
 ```
 
-to list your accounts in order of creation. 
+to list your accounts in order of creation.
 
 **Note**:
-This order can change if you copy keyfiles from other nodes, so make sure you either do not rely on indexes or make sure if you copy keys you check and update your account indexes in your scripts. 
+This order can change if you copy keyfiles from other nodes, so make sure you either do not rely on indexes or make sure if you copy keys you check and update your account indexes in your scripts.
 
 When using the console:
 ```
@@ -279,8 +279,8 @@ programmatically, you do not need to know the actual account to unlock it.
 
 Create account and start node with account unlocked:
 ```
-geth account new --password <(echo this is not secret!) 
-geth --password <(echo this is not secret!) --unlock primary --rpccorsdomain localhost --verbosity 6 2>> geth.log 
+geth account new --password <(echo this is not secret!)
+geth --password <(echo this is not secret!) --unlock primary --rpccorsdomain localhost --verbosity 6 2>> geth.log
 ```
 
 Instead of the account address, you can use integer indexes which refers to the address

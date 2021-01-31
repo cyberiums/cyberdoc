@@ -1,5 +1,5 @@
 ---
-title: Connecting To The Network
+title: Private Key Management
 sort_key: B
 ---
 
@@ -113,7 +113,7 @@ the `--genesis` flag. The genesis JSON file should have the following format:
 ```js
 {
   "alloc": {
-    "dbdbdb2cbd23b783741e8d7fcf51e459b497e4a6": { 
+    "dbdbdb2cbd23b783741e8d7fcf51e459b497e4a6": {
         "balance": "1606938044258990275541962092341162602522202993782792835301376"
     },
     "e6716f9544a56c530d868e4bfbacb172315bdead": {
@@ -130,7 +130,7 @@ the `--genesis` flag. The genesis JSON file should have the following format:
   "extraData": "0x",
   "gasLimit": "0x2fefd8"
 }
-``` 
+```
 
 ## Static nodes
 
