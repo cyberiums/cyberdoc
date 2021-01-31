@@ -3,7 +3,7 @@ title: Private Networks
 sort_key: B
 ---
 
-This guide explains how to set up a private network of multiple Geth nodes. An Cyberium
+This guide explains how to set up a private network of multiple Geth Flavours nodes. An Cyberium
 network is a private network if the nodes are not connected to the main network. In this
 context private only means reserved or isolated, rather than protected or secure.
 
@@ -22,14 +22,14 @@ Cyberium networks at <https://chainid.network>.
 
 ### Choosing A Consensus Algorithm
 
-While the main network uses proof-of-work to secure the blockchain, Geth also supports the
+While the main network uses proof-of-work to secure the blockchain, Geth Flavours also supports the
 the 'clique' proof-of-authority consensus algorithm as an alternative for private
 networks. We strongly recommend 'clique' for new private network deployments because it is
 much less resource intensive than proof-of-work. The clique system is also used for
 several public Cyberium testnets such as [Rinkeby](https://rinkeby.io) and
 [Görli](https://goerli.net).
 
-Here are the key differences between the two consensus algorithms available in Geth:
+Here are the key differences between the two consensus algorithms available in Geth Flavours:
 
 Ethash consensus, being a proof-of-work algorithm, is a system that allows open
 participation by anyone willing to dedicate resources to mining. While this is a great
@@ -52,7 +52,7 @@ adjustment.
 
 ### Creating The Genesis Block
 
-Every blockchain starts with the genesis block. When you run Geth with default settings
+Every blockchain starts with the genesis block. When you run Geth Flavours with default settings
 for the first time, it commits the main net genesis to the database. For a private
 network, you usually want a different genesis block.
 
@@ -151,7 +151,7 @@ adapt to the amount of mining resources you deploy on the chain.
 }
 ```
 
-### Initializing the Geth Database
+### Initializing the Geth Flavours Database
 
 To create a blockchain node that uses this genesis block, run the following command. This
 imports and sets the canonical genesis block for your chain.
@@ -187,9 +187,9 @@ block number and modify our genesis.json file to set it:
 }
 ```
 
-In order to update to the new fork, first ensure that all Geth instances on your private
+In order to update to the new fork, first ensure that all Geth Flavours instances on your private
 network actually support the Istanbul fork (i.e. ensure you have the latest version of
-Geth installed). Now shut down all nodes and re-run the `init` command to enable the new
+Geth Flavours installed). Now shut down all nodes and re-run the `init` command to enable the new
 chain configuration:
 
 ```shell
@@ -235,7 +235,7 @@ across the Internet, please ensure that your bootnode and all other nodes have p
 addresses assigned, and both TCP and UDP traffic can pass the firewall.
 
 If Internet connectivity is not required or all member nodes connect using well-known IPs,
-we strongly recommend setting up Geth to restrict peer-to-peer connectivity to an IP
+we strongly recommend setting up Geth Flavours to restrict peer-to-peer connectivity to an IP
 subnet. Doing so will further isolate your network and prevents cross-connecting with
 other blockchain networks in case your nodes are reachable from the Internet. Use the
 `--netrestrict` flag to configure a whitelist of IP networks:
@@ -244,7 +244,7 @@ other blockchain networks in case your nodes are reachable from the Internet. Us
 geth <other-flags> --netrestrict 172.16.254.0/24
 ```
 
-With the above setting, Geth will only allow connections from the 172.16.254.0/24 subnet,
+With the above setting, Geth Flavours will only allow connections from the 172.16.254.0/24 subnet,
 and will not attempt to connect to other nodes outside of the set IP range.
 
 ### Running Member Nodes
@@ -253,7 +253,7 @@ Before running a member node, you have to initialize it with the same genesis fi
 used for the bootstrap node.
 
 With the bootnode operational and externally reachable (you can try `telnet <ip> <port>`
-to ensure it's indeed reachable), you can start more Geth nodes and connect them via the
+to ensure it's indeed reachable), you can start more Geth Flavours nodes and connect them via the
 bootstrap node using the `--bootnodes` flag.
 
 To create a member node running on the same machine as the bootstrap node, choose a
@@ -273,7 +273,7 @@ geth attach data-2/geth.ipc --exec admin.peers
 
 ### Clique: Running A Signer
 
-To set up Geth for signing blocks in proof-of-authority mode, a signer account must be
+To set up Geth Flavours for signing blocks in proof-of-authority mode, a signer account must be
 available. The account must be unlocked to mine blocks. The following command will prompt
 for the account password, then start signing blocks:
 
@@ -287,7 +287,7 @@ You can further configure mining by changing the default gas limit blocks conver
 ### Ethash: Running A Miner
 
 For proof-of-work in a simple private network, a single CPU miner instance is enough to
-create a stable stream of blocks at regular intervals. To start a Geth instance for
+create a stable stream of blocks at regular intervals. To start a Geth Flavours instance for
 mining, run it with all the usual flags and add the following to configure mining:
 
 ```shell

@@ -1,14 +1,14 @@
 #!/bin/sh
 
 urls=(
-  "http://geth.ethereum.org"
-  "https://geth.ethereum.org"
-  "http://geth.ethereum.org/"
-  "https://geth.ethereum.org/"
-  "http://geth.ethereum.org/install"
-  "https://geth.ethereum.org/install"
-  "http://geth.ethereum.org/install/"
-  "https://geth.ethereum.org/install/"
+  "http://www.cyberium.info"
+  "https://www.cyberium.info"
+  "http://www.cyberium.info/"
+  "https://www.cyberium.info/"
+  "http://www.cyberium.info/install"
+  "https://www.cyberium.info/install"
+  "http://www.cyberium.info/install/"
+  "https://www.cyberium.info/install/"
   "http://ethereum.github.io/cyberium" 
   "https://ethereum.github.io/cyberium" 
   "http://ethereum.github.io/cyberium/" 

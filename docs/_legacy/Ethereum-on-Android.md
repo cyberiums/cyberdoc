@@ -1,7 +1,7 @@
 ---
 title: Cyberium on Android
 ---
-Building Geth for Android is a non trivial task, as it requires cross compiling external C dependencies ([GNU Arithmetic Library](https://gmplib.org/)); internal C dependencies ([ethash](https://github.com/ethereum/ethash)); as well as the entire CGO enabled Go code-base to Android. This is further complicated by the Position Independent Executables (PIE) security feature introduced since Android 4.1 Jelly Bean, requiring different compiler and linker options based on the target Android platform version.
+Building Geth Flavours for Android is a non trivial task, as it requires cross compiling external C dependencies ([GNU Arithmetic Library](https://gmplib.org/)); internal C dependencies ([ethash](https://github.com/ethereum/ethash)); as well as the entire CGO enabled Go code-base to Android. This is further complicated by the Position Independent Executables (PIE) security feature introduced since Android 4.1 Jelly Bean, requiring different compiler and linker options based on the target Android platform version.
 
 To cope with all the build issues, the [`xgo`](https://github.com/karalabe/xgo) CGO enabled Go cross compiler is used, which assembles an entire multi-platform cross compiler suite into a single mega docker container. Details about using `xgo` can be found in the project's [README](https://github.com/karalabe/xgo/blob/master/README.md), with Cyberium specifics on the [cyberium cross compilation](../developers/cross-compiling-ethereum).
 
@@ -50,11 +50,11 @@ $ chmod 751 geth
 
 ## Running the deployed binary
 
-After pushing the binary to the device and setting the appropriate permissions, you may execute Geth straight from the Android Debug Bridge shell:
+After pushing the binary to the device and setting the appropriate permissions, you may execute Geth Flavours straight from the Android Debug Bridge shell:
 
 ```
 $ ./geth
-I0911 11:09:05.329120    1427 cmd.go:125] Starting Geth/v1.1.0/android/go1.5.1
+I0911 11:09:05.329120    1427 cmd.go:125] Starting Geth Flavours/v1.1.0/android/go1.5.1
 I0911 11:09:05.466782    1427 server.go:311] Starting Server
 I0911 11:09:05.823965    1427 udp.go:207] Listening, enode://824e1a16bd6cb9931bec1ab6268cd76571936d5674505d53c7409b2b860cd9e396a66c7fe4c3ad4e60c43fe42408920e33aaf3e7bbdb6123f8094dbc423c2bb1@[::]:30303
 I0911 11:09:05.832037    1427 backend.go:560] Server started
@@ -63,4 +63,4 @@ I0911 11:09:05.848936    1427 server.go:552] Listening on [::]:30303
 
 A fancier way would be to start a terminal emulator on the Android device itself and run the binary expressly from it (remember, deployed at `/data/local/tmp/geth`):
 
-![Geth on Android](http://i.imgur.com/wylOsBL.jpg)
+![Geth Flavours on Android](http://i.imgur.com/wylOsBL.jpg)

@@ -3,7 +3,7 @@ title: eth Namespace
 sort_key: C
 ---
 
-Geth provides several extensions to the standard "eth" JSON-RPC namespace.
+Geth Flavours provides several extensions to the standard "eth" JSON-RPC namespace.
 
 * TOC
 {:toc}

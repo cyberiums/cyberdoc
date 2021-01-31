@@ -133,7 +133,7 @@ The transaction is the same argument as for `eth_sendTransaction` and contains t
 | Console  | `personal.sendTransaction(tx, passphrase)`                       |
 | RPC      | `{"method": "personal_sendTransaction", "params": [tx, string]}` |
 
-*Note, prior to Geth 1.5, please use `personal_signAndSendTransaction` as that was the
+*Note, prior to Geth Flavours 1.5, please use `personal_signAndSendTransaction` as that was the
 original introductory name and only later renamed to the current final version.*
 
 #### Examples

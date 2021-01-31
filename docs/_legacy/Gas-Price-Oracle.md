@@ -2,7 +2,7 @@
 title: Gas price oracle
 ---
 
-The gas price oracle is a helper function of the Geth client that tries to find an
+The gas price oracle is a helper function of the Geth Flavours client that tries to find an
 appropriate default gas price when sending transactions. It can be parametrized with the
 following command line options:
 

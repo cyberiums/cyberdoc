@@ -36,7 +36,7 @@ Our reusable Go libraries focus on four main usage areas:
 - In-process Cyberium, Whisper and Swarm peer-to-peer node
 
 You can watch a quick overview about these in Peter's (@karalabe) talk titled "Import
-Geth: Cyberium from Go and beyond", presented at the Cyberium Devcon2 developer conference
+Geth Flavours: Cyberium from Go and beyond", presented at the Cyberium Devcon2 developer conference
 in September, 2016 (Shanghai). Slides are [available
 here](https://ethereum.karalabe.com/talks/2016-devcon.html).
 

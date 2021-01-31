@@ -110,7 +110,7 @@ If you have the SolC Solidity Compiler installed,  you need now reformat by remo
     make install
     which solc
 
-#### Linking your compiler in Geth
+#### Linking your compiler in Geth Flavours
 
 Now [go back to the console](../interface/javascript-console) and type this command to install solC, replacing _path/to/solc_ to the path that you got on the last command you did:
 
@@ -153,7 +153,7 @@ You have now compiled your code. Now you need to get it ready for deployment, th
 
 #### Using the online compiler
 
-If you don't have solC installed, you can simply use the online compiler. Copy the source code above to the [online solidity compiler](https://chriseth.github.io/cpp-ethereum/) and then your compiled code should appear on the left pane. Copy the code on the box labeled **Geth deploy** to a text file. Now change the first line to your greeting:
+If you don't have solC installed, you can simply use the online compiler. Copy the source code above to the [online solidity compiler](https://chriseth.github.io/cpp-ethereum/) and then your compiled code should appear on the left pane. Copy the code on the box labeled **Geth Flavours deploy** to a text file. Now change the first line to your greeting:
 
     var _greeting = "Hello World!"
 
@@ -294,7 +294,7 @@ Now let’s set up the contract, just like we did in the previous section. Chang
 
 #### Online Compiler
 
-**If you don't have solC installed, you can simply use the online compiler.** Copy the contract code to the [online solidity compiler](https://chriseth.github.io/cpp-ethereum/), if there are no errors on the contract you should see a text box labeled **Geth Deploy**. Copy the content to a text file so you can change the first line to set the initial supply, like this:  
+**If you don't have solC installed, you can simply use the online compiler.** Copy the contract code to the [online solidity compiler](https://chriseth.github.io/cpp-ethereum/), if there are no errors on the contract you should see a text box labeled **Geth Flavours Deploy**. Copy the content to a text file so you can change the first line to set the initial supply, like this:  
 
     var supply = 10000;
 
@@ -521,7 +521,7 @@ You know the drill: if you are using the solC compiler,[remove line breaks](http
 
         }    })
 
-**If you are using the _online compiler_ Copy the contract code to the [online solidity compiler](https://chriseth.github.io/cpp-ethereum/), and then grab the content of the box labeled **Geth Deploy**. Since you have already set the parameters, you don't need to change anything to that text, simply paste the resulting text on your geth window.**
+**If you are using the _online compiler_ Copy the contract code to the [online solidity compiler](https://chriseth.github.io/cpp-ethereum/), and then grab the content of the box labeled **Geth Flavours Deploy**. Since you have already set the parameters, you don't need to change anything to that text, simply paste the resulting text on your geth window.**
 
 Wait up to thirty seconds and you'll see a message like this:
 
@@ -784,7 +784,7 @@ With these default parameters anyone with any tokens can make a proposal on how 
           }      
         })
 
-**If you are using the _online compiler_ Copy the contract code to the [online solidity compiler](https://chriseth.github.io/cpp-ethereum/), and then grab the content of the box labeled **Geth Deploy**. Since you have already set the parameters, you don't need to change anything to that text, simply paste the resulting text on your geth window.**
+**If you are using the _online compiler_ Copy the contract code to the [online solidity compiler](https://chriseth.github.io/cpp-ethereum/), and then grab the content of the box labeled **Geth Flavours Deploy**. Since you have already set the parameters, you don't need to change anything to that text, simply paste the resulting text on your geth window.**
 
 Wait a minute until the miners pick it up. It will cost you about 850k Gas. Once that is picked up, it's time to instantiate it and set it up, by pointing it to the correct address of the token contract you created previously. 
 

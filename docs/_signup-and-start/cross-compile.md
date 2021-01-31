@@ -1,5 +1,5 @@
 ---
-title: Cross-Compiling Geth
+title: Cross-Compiling Geth Flavours
 sort_key: C
 ---
 

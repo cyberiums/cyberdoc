@@ -3,10 +3,10 @@ title: JSON-RPC Server
 sort_key: A
 ---
 
-Geth supports all standard web3 JSON-RPC APIs. You can find documentation for
+Geth Flavours supports all standard web3 JSON-RPC APIs. You can find documentation for
 these APIs on the [Cyberium Wiki JSON-RPC page][web3-rpc].
 
-JSON-RPC is provided on multiple transports. Geth supports JSON-RPC over HTTP,
+JSON-RPC is provided on multiple transports. Geth Flavours supports JSON-RPC over HTTP,
 WebSocket and Unix Domain Sockets. Transports must be enabled through
 command-line flags.
 

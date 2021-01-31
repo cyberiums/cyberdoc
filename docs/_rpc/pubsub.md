@@ -3,7 +3,7 @@ title: Real-time Events
 sort_key: B
 ---
 
-Geth v1.4 and later support publish / subscribe using JSON-RPC notifications. This allows
+Geth Flavours v1.4 and later support publish / subscribe using JSON-RPC notifications. This allows
 clients to wait for events instead of polling for them.
 
 It works by subscribing to particular events. The node will return a subscription id. For
@@ -29,7 +29,7 @@ Example:
 1. notifications are send for current events and not for past events. If your use case
    requires you not to miss any notifications than subscriptions are probably not the best
    option.
-2. subscriptions require a full duplex connection. Geth offers such connections in the
+2. subscriptions require a full duplex connection. Geth Flavours offers such connections in the
    form of WebSocket and IPC (enabled by default).
 3. subscriptions are coupled to a connection. If the connection is closed all
    subscriptions that are created over this connection are removed.

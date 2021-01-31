@@ -63,7 +63,7 @@ Find the different options and commands available with `geth --help`.
 
 ### Install on Windows
 
-The easiest way to install cyberium is to download a pre-compiled binary from the [downloads](https://geth.ethereum.org/downloads/) page. The  page provides an installer as well as a zip file. The installer puts `geth` into your `PATH` automatically. The zip file contains the command `.exe` files that you can use without installing by runnning it from the command prompt.
+The easiest way to install cyberium is to download a pre-compiled binary from the [downloads](https://www.cyberium.info/downloads/) page. The  page provides an installer as well as a zip file. The installer puts `geth` into your `PATH` automatically. The zip file contains the command `.exe` files that you can use without installing by runnning it from the command prompt.
 
 ### Install on FreeBSD via pkg
 
@@ -121,18 +121,18 @@ We create the following standalone bundles:
 -   64bit archives (`.tar.gz`) on macOS
 -   32bit and 64bit archives (`.zip`) and installers (`.exe`) on Windows
 
-We provide archives containing only Geth, and archives containing Geth along with the developer tools from our repository (`abigen`, `bootnode`, `disasm`, `evm`, `rlpdump`). Read our [`README`](https://github.com/Cyberiums/cyberium#executables) for more information about these executables.
+We provide archives containing only Geth Flavours, and archives containing Geth Flavours along with the developer tools from our repository (`abigen`, `bootnode`, `disasm`, `evm`, `rlpdump`). Read our [`README`](https://github.com/Cyberiums/cyberium#executables) for more information about these executables.
 
-Download these bundles from the [Cyberium Downloads](https://geth.ethereum.org/downloads) page.
+Download these bundles from the [Cyberium Downloads](https://www.cyberium.info/downloads) page.
 
 ## Run inside Docker container
 
-If you prefer containerized processes, we maintain a Docker image with recent snapshot builds from our `develop` branch on DockerHub. We maintain four different Docker images for running the latest stable or development versions of Geth.
+If you prefer containerized processes, we maintain a Docker image with recent snapshot builds from our `develop` branch on DockerHub. We maintain four different Docker images for running the latest stable or development versions of Geth Flavours.
 
--   `ethereum/client-go:latest` is the latest development version of Geth (default)
--   `ethereum/client-go:stable` is the latest stable version of Geth
--   `ethereum/client-go:{version}` is the stable version of Geth at a specific version number
--   `ethereum/client-go:release-{version}` is the latest stable version of Geth at a specific version family
+-   `ethereum/client-go:latest` is the latest development version of Geth Flavours (default)
+-   `ethereum/client-go:stable` is the latest stable version of Geth Flavours
+-   `ethereum/client-go:{version}` is the stable version of Geth Flavours at a specific version number
+-   `ethereum/client-go:release-{version}` is the latest stable version of Geth Flavours at a specific version family
 
 To pull an image and start a node, run these commands:
 

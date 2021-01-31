@@ -5,11 +5,11 @@ sort_key: B
 
 ## How Peers Are Found
 
-Geth continuously attempts to connect to other nodes on the network until it has peers. If
+Geth Flavours continuously attempts to connect to other nodes on the network until it has peers. If
 you have UPnP enabled on your router or run ethereum on an Internet-facing server, it will
 also accept connections from other nodes.
 
-Geth finds peers through something called the discovery protocol. In the discovery
+Geth Flavours finds peers through something called the discovery protocol. In the discovery
 protocol, nodes are gossipping with each other to find out about other nodes on the
 network. In order to get going initially, geth uses a set of bootstrap nodes whose
 endpoints are recorded in the source code.
@@ -55,13 +55,13 @@ returns the list of currently connected peers.
 > admin.peers
 [{
   ID: 'a4de274d3a159e10c2c9a68c326511236381b84c9ec52e72ad732eb0b2b1a2277938f78593cdbe734e6002bf23114d434a085d260514ab336d4acdc312db671b',
-  Name: 'Geth/v0.9.14/linux/go1.4.2',
+  Name: 'Geth Flavours/v0.9.14/linux/go1.4.2',
   Caps: 'eth/60',
   RemoteAddress: '5.9.150.40:30301',
   LocalAddress: '192.168.0.28:39219'
 }, {
   ID: 'a979fb575495b8d6db44f750317d0f4622bf4c2aa3365d6af7c284339968eef29b69ad0dce72a4d8db5ebb4968de0e3bec910127f134779fbcb0cb6d3331163c',
-  Name: 'Geth/v0.9.15/linux/go1.4.2',
+  Name: 'Geth Flavours/v0.9.15/linux/go1.4.2',
   Caps: 'eth/60',
   RemoteAddress: '52.16.188.185:30303',
   LocalAddress: '192.168.0.28:50995'
@@ -86,7 +86,7 @@ To check the ports used by geth and also find your enode URI run:
 ```
 > admin.nodeInfo
 {
-  Name: 'Geth/v0.9.14/darwin/go1.4.2',
+  Name: 'Geth Flavours/v0.9.14/darwin/go1.4.2',
   NodeUrl: 'enode://3414c01c19aa75a34f2dbd2f8d0898dc79d6b219ad77f8155abf1a287ce2ba60f14998a3a98c0cf14915eabfdacf914a92b27a01769de18fa2d049dbf4c17694@[::]:30303',
   NodeID: '3414c01c19aa75a34f2dbd2f8d0898dc79d6b219ad77f8155abf1a287ce2ba60f14998a3a98c0cf14915eabfdacf914a92b27a01769de18fa2d049dbf4c17694',
   IP: '::',
@@ -134,7 +134,7 @@ the `--genesis` flag. The genesis JSON file should have the following format:
 
 ## Static nodes
 
-Geth also supports a feature called static nodes if you have certain peers you always want
+Geth Flavours also supports a feature called static nodes if you have certain peers you always want
 to connect to. Static nodes are re-connected on disconnects. You can configure permanent
 static nodes by putting something like the following into
 `<datadir>/geth/static-nodes.json`:

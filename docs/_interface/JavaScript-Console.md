@@ -3,7 +3,7 @@ title: JavaScript Console
 sort_key: B
 ---
 
-The Geth JavaScript console exposes the full [web3 JavaScript Dapp
+The Geth Flavours JavaScript console exposes the full [web3 JavaScript Dapp
 API](https://github.com/ethereum/wiki/wiki/JavaScript-API) and further administrative
 APIs.
 
@@ -37,7 +37,7 @@ Otherwise mute your logs, so that it does not pollute your console:
 
     geth console 2> /dev/null
 
-Geth has support to load custom JavaScript files into the console through the `--preload`
+Geth Flavours has support to load custom JavaScript files into the console through the `--preload`
 option. This can be used to load often used functions, or to setup web3 contract objects.
 
     geth console --preload "/my/scripts/folder/utils.js,/my/scripts/folder/contracts.js"

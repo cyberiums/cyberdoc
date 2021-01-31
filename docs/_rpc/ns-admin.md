@@ -4,7 +4,7 @@ sort_key: C
 ---
 
 The `admin` API gives you access to several non-standard RPC methods, which will allow you to have
-a fine grained control over your Geth instance, including but not limited to network peer and RPC
+a fine grained control over your Geth Flavours instance, including but not limited to network peer and RPC
 endpoint management.
 
 * TOC
@@ -35,7 +35,7 @@ true
 
 ### admin_datadir
 
-The `datadir` administrative property can be queried for the absolute path the running Geth node
+The `datadir` administrative property can be queried for the absolute path the running Geth Flavours node
 currently uses to store all its databases.
 
 | Client  | Method invocation                 |
@@ -54,7 +54,7 @@ currently uses to store all its databases.
 ### admin_nodeInfo
 
 The `nodeInfo` administrative property can be queried for all the information known about the running
-Geth node at the networking granularity. These include general information about the node itself as a
+Geth Flavours node at the networking granularity. These include general information about the node itself as a
 participant of the [ÐΞVp2p](https://github.com/ethereum/wiki/wiki/%C3%90%CE%9EVp2p-Wire-Protocol) P2P
 overlay protocol, as well as specialized information added by each of the running application protocols
 (e.g. `eth`, `les`, `shh`, `bzz`).
@@ -74,7 +74,7 @@ overlay protocol, as well as specialized information added by each of the runnin
   id: "44826a5d6a55f88a18298bca4773fca5749cdc3a5c9f308aa7d810e9b31123f3e7c5fba0b1d70aac5308426f47df2a128a6747040a3815cc7dd7167d03be320d",
   ip: "::",
   listenAddr: "[::]:30303",
-  name: "Geth/v1.5.0-unstable/linux/go1.6",
+  name: "Geth Flavours/v1.5.0-unstable/linux/go1.6",
   ports: {
     discovery: 30303,
     listener: 30303
@@ -111,7 +111,7 @@ protocols (e.g. `eth`, `les`, `shh`, `bzz`).
 [{
     caps: ["eth/61", "eth/62", "eth/63"],
     id: "08a6b39263470c78d3e4f58e3c997cd2e7af623afce64656cfc56480babcea7a9138f3d09d7b9879344c2d2e457679e3655d4b56eaff5fd4fd7f147bdb045124",
-    name: "Geth/v1.5.0-unstable/linux/go1.5.1",
+    name: "Geth Flavours/v1.5.0-unstable/linux/go1.5.1",
     network: {
       localAddress: "192.168.0.104:51068",
       remoteAddress: "71.62.31.72:30303"
@@ -126,7 +126,7 @@ protocols (e.g. `eth`, `les`, `shh`, `bzz`).
 }, /* ... */ {
     caps: ["eth/61", "eth/62", "eth/63"],
     id: "fcad9f6d3faf89a0908a11ddae9d4be3a1039108263b06c96171eb3b0f3ba85a7095a03bb65198c35a04829032d198759edfca9b63a8b69dc47a205d94fce7cc",
-    name: "Geth/v1.3.5-506c9277/linux/go1.4.2",
+    name: "Geth Flavours/v1.3.5-506c9277/linux/go1.4.2",
     network: {
       localAddress: "192.168.0.104:55968",
       remoteAddress: "121.196.232.205:30303"

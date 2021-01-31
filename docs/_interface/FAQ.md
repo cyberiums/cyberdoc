@@ -12,13 +12,13 @@ sort_key: C
 
 **Q.**  I would like to run multiple geth instances but got the error "Fatal: blockchain db err: resource temporarily unavailable".
 
-**A.**  Geth uses a datadir to store the blockchain, accounts and some additional information. This directory cannot be shared between running instances. If you would like to run multiple instances follow [these](../doc/setting-up-private-network-or-local-cluster) instructions.
+**A.**  Geth Flavours uses a datadir to store the blockchain, accounts and some additional information. This directory cannot be shared between running instances. If you would like to run multiple instances follow [these](../doc/setting-up-private-network-or-local-cluster) instructions.
 
 ---
 
 **Q.** How do Cyberium syncing work?
 
-**A.** The current default mode of sync for Geth is called fast sync. Instead of starting from the genesis block and reprocessing all the transactions that ever occurred (which could take weeks), fast sync downloads the blocks, and only verifies the associated proof-of-works. Downloading all the blocks is a straightforward and fast procedure and will relatively quickly reassemble the entire chain.
+**A.** The current default mode of sync for Geth Flavours is called fast sync. Instead of starting from the genesis block and reprocessing all the transactions that ever occurred (which could take weeks), fast sync downloads the blocks, and only verifies the associated proof-of-works. Downloading all the blocks is a straightforward and fast procedure and will relatively quickly reassemble the entire chain.
 
 Many people falsely assume that because they have the blocks, they are in sync. Unfortunately this is not the case, since no transaction was executed, so we do not have any account state available (ie. balances, nonces, smart contract code and data). These need to be downloaded separately and cross checked with the latest blocks. This phase is called the state trie download and it actually runs concurrently with the block downloads; alas it take a lot longer nowadays than downloading the blocks.
 

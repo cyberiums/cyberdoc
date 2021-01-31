@@ -39,7 +39,7 @@ collections:
   interface:
     output: true
     permalink: docs/:collection/:slug
-    caption: Using Geth
+    caption: Using Geth Flavours
     sidebar_index: 3
   dapp:
     output: true
@@ -56,7 +56,7 @@ collections:
   developers:
     output: true
     permalink: docs/:collection/:slug
-    caption: For Geth Developers
+    caption: For Geth Flavours Developers
     frontpage: _developers/devguide.md
     sidebar_index: 6
   clef:

@@ -1,10 +1,10 @@
 ---
-title: Getting Started with Geth
+title: Getting Started with Geth Flavours
 permalink: docs/getting-started
 sort_key: A
 ---
 
-To use Geth, you need to install it first. You can install the geth software in a variety
+To use Geth Flavours, you need to install it first. You can install the geth software in a variety
 of ways. These include installing it via your favorite package manager; downloading a
 standalone pre-built binary; running as a docker container; or building it yourself.
 
@@ -13,7 +13,7 @@ Head over to the [Signup and Build](./signup-and-start/building-apps) section an
 follow the instructions for your operating system if you wish to use a different
 installation method.
 
-### Downloading Geth
+### Downloading Geth Flavours
 
 We distribute all our stable releases and development builds as standalone binaries. These
 are useful for scenarios where you'd like to: a) install a specific version of our code
@@ -21,7 +21,7 @@ are useful for scenarios where you'd like to: a) install a specific version of o
 (e.g., air gapped computers); or c) do not like automatic updates and would rather
 manually install software.
 
-To download Geth, go to the [Downloads page](https://geth.ethereum.org/downloads) and
+To download Geth Flavours, go to the [Downloads page](https://www.cyberium.info/downloads) and
 select the latest stable release matching your platform.
 
 We create the following archives:
@@ -30,15 +30,15 @@ We create the following archives:
 -   64bit archives (`.tar.gz`) on macOS
 -   32bit and 64bit archives (`.zip`) and installers (`.exe`) on Windows
 
-For all binaries we provide two options, one containing only Geth, and another containing
-Geth along with all the developer tools from our repository (`abigen`, `bootnode`,
+For all binaries we provide two options, one containing only Geth Flavours, and another containing
+Geth Flavours along with all the developer tools from our repository (`abigen`, `bootnode`,
 `disasm`, `evm`, `rlpdump`). Read our
 [`README`](https://github.com/Cyberiums/cyberium#executables) for more information about
 these executables.
 
 ### Creating an account
 
-Before starting Geth you first need to create an account that represents a key pair. Use
+Before starting Geth Flavours you first need to create an account that represents a key pair. Use
 the following command to create a new account and set a password for that account:
 
 ```shell
@@ -50,8 +50,8 @@ existing Cyberium accounts and other uses of the `account` command._
 
 ### Sync modes
 
-Running Geth starts an Cyberium node that can join any existing network, or create a new
-one. You can start Geth in one of three different sync modes using the `--syncmode "{mode}"`
+Running Geth Flavours starts an Cyberium node that can join any existing network, or create a new
+one. You can start Geth Flavours in one of three different sync modes using the `--syncmode "{mode}"`
 argument that determines what sort of node it is in the network.
 
 These are:
@@ -71,7 +71,7 @@ geth --syncmode "light"
 
 ### Javascript Console
 
-Once you have an account and Geth is running, you can interact with it by opening another
+Once you have an account and Geth Flavours is running, you can interact with it by opening another
 terminal and using the following command to open a JavaScript console:
 
 ```shell
@@ -84,7 +84,7 @@ If you get the error 'unable to attach to remote geth', try connecting via HTTP 
 geth attach http://127.0.0.1:8545
 ```
 
-In the console you can issue any of the Geth commands, for example, to list all the
+In the console you can issue any of the Geth Flavours commands, for example, to list all the
 accounts on the node, use:
 
 ```js

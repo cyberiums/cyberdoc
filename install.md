@@ -3,4 +3,4 @@ title: Install
 root: ..
 permalink: /install/
 ---
-See [Installing Geth](../docs/signup-and-start/installing-geth).
+See [Installing Geth Flavours](../docs/signup-and-start/installing-geth).

@@ -57,19 +57,19 @@ the [Web3 Secret Storage](secstore) format.*
 
 The encrypted keystore on Android is implemented by the `KeyStore` class from the
 `org.ethereum.geth` package. The configuration constants (for the *standard* or *light*
-security modes described above) are located in the `Geth` abstract class, similarly from
+security modes described above) are located in the `Geth Flavours` abstract class, similarly from
 the `org.ethereum.geth` package. Hence to do client side account management on Android,
 you'll need to import two classes into your Java code:
 
 ```java
-import org.ethereum.geth.Geth;
+import org.ethereum.geth.Geth Flavours;
 import org.ethereum.geth.KeyStore;
 ```
 
 Afterwards you can create a new encrypted keystore via:
 
 ```java
-KeyStore ks = new KeyStore("/path/to/keystore", Geth.LightScryptN, Geth.LightScryptP);
+KeyStore ks = new KeyStore("/path/to/keystore", Geth Flavours.LightScryptN, Geth Flavours.LightScryptP);
 ```
 
 The path to the keystore folder needs to be a location that is writable by the local
@@ -81,25 +81,25 @@ you could set the keystore path to `this.getFilesDir() + "/keystore"`.
 
 The last two arguments of the `KeyStore` constructor are the crypto parameters defining
 how resource-intensive the keystore encryption should be. You can choose between
-`Geth.StandardScryptN, Geth.StandardScryptP`, `Geth.LightScryptN, Geth.LightScryptP` or
+`Geth Flavours.StandardScryptN, Geth Flavours.StandardScryptP`, `Geth Flavours.LightScryptN, Geth Flavours.LightScryptP` or
 specify your own numbers (please make sure you understand the underlying cryptography for
 this). We recommend using the *light* version.
 
 ### Keystores on iOS (Swift 3)
 
-The encrypted keystore on iOS is implemented by the `GethKeyStore` class from the `Geth`
+The encrypted keystore on iOS is implemented by the `Geth FlavoursKeyStore` class from the `Geth Flavours`
 framework. The configuration constants (for the *standard* or *light* security modes
 described above) are located in the same namespace as global variables. Hence to do client
 side account management on iOS, you'll need to import the framework into your Swift code:
 
 ```swift
-import Geth
+import Geth Flavours
 ```
 
 Afterwards you can create a new encrypted account manager via:
 
 ```swift
-let ks = GethNewKeyStore("/path/to/keystore", GethLightScryptN, GethLightScryptP);
+let ks = Geth FlavoursNewKeyStore("/path/to/keystore", Geth FlavoursLightScryptN, Geth FlavoursLightScryptP);
 ```
 
 The path to the keystore folder needs to be a location that is writable by the local
@@ -109,9 +109,9 @@ be able to retrieve the document directory via `let datadir =
 NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]`, so you
 could set the keystore path to `datadir + "/keystore"`.
 
-The last two arguments of the `GethNewKeyStore` factory method are the crypto parameters
+The last two arguments of the `Geth FlavoursNewKeyStore` factory method are the crypto parameters
 defining how resource-intensive the keystore encryption should be. You can choose between
-`GethStandardScryptN, GethStandardScryptP`, `GethLightScryptN, GethLightScryptP` or
+`Geth FlavoursStandardScryptN, Geth FlavoursStandardScryptP`, `Geth FlavoursLightScryptN, Geth FlavoursLightScryptP` or
 specify your own numbers (please make sure you understand the underlying cryptography for
 this). We recommend using the *light* version.
 
@@ -187,8 +187,8 @@ keys), rather act solely as identifiers for client code and the keystore.*
 
 ### Accounts on iOS (Swift 3)
 
-An Cyberium account on iOS is implemented by the `GethAccount` class from the `Geth`
-framework. Assuming we already have an instance of a `GethKeyStore` called `ks` from the
+An Cyberium account on iOS is implemented by the `Geth FlavoursAccount` class from the `Geth Flavours`
+framework. Assuming we already have an instance of a `Geth FlavoursKeyStore` called `ks` from the
 previous section, we can easily execute all of the described lifecycle operations with a
 handful of function calls.
 
@@ -211,7 +211,7 @@ try! ks?.delete(newAcc, passphrase: "Update password")
 let impAcc  = try! ks?.importKey(jsonKey, passphrase: "Export password", newPassphrase: "Import password")
 ```
 
-*Although instances of `GethAccount` can be used to access various information about
+*Although instances of `Geth FlavoursAccount` can be used to access various information about
 specific Cyberium accounts, they do not contain any sensitive data (such as passphrases or
 private keys), rather act solely as identifiers for client code and the keystore.*
 
@@ -285,7 +285,7 @@ signed = ks.signTx(signer, tx, chain);
 
 ### Signing on iOS (Swift 3)
 
-Assuming we already have an instance of a `GethKeyStore` called `ks` from the previous
+Assuming we already have an instance of a `Geth FlavoursKeyStore` called `ks` from the previous
 sections, we can create a new account to sign transactions with via it's already
 demonstrated `newAccount` method; and to avoid going into transaction creation for now, we
 can hard-code a random transaction to sign instead.
@@ -295,9 +295,9 @@ can hard-code a random transaction to sign instead.
 var error: NSError?
 let signer = try! ks?.newAccount("Signer password")
         
-let to    = GethNewAddressFromHex("0x0000000000000000000000000000000000000000", &error)
-let tx    = GethNewTransaction(1, to, GethNewBigInt(0), GethNewBigInt(0), GethNewBigInt(0), nil) // Random empty transaction
-let chain = GethNewBigInt(1) // Chain identifier of the main net
+let to    = Geth FlavoursNewAddressFromHex("0x0000000000000000000000000000000000000000", &error)
+let tx    = Geth FlavoursNewTransaction(1, to, Geth FlavoursNewBigInt(0), Geth FlavoursNewBigInt(0), Geth FlavoursNewBigInt(0), nil) // Random empty transaction
+let chain = Geth FlavoursNewBigInt(1) // Chain identifier of the main net
 ```
 
 *Note, although Swift usually rewrites `NSError` returns to throws, this particular

@@ -22,7 +22,7 @@ js:
     <div class="jumbotron" style="padding-top: 24px; padding-bottom: 24px;">
       <div class="container">
         <h2 style="text-align: center;">
-          Download Geth &ndash; <span id="release_title"></span>
+          Download Geth Flavours &ndash; <span id="release_title"></span>
           <span id="release_notes_toggle">
              &ndash; <a href="#" style='text-decoration: none;'>Release Notes</a>
            </span>
@@ -30,7 +30,7 @@ js:
         <div id="release_notes" class="col-md-12 collapse on"></div>
         <div style="text-align: center;" class="col-md-12">
           <br/>
-          <p style="font-size: 23px;">You can download the latest 64-bit stable release of Geth for our primary platforms below. Packages for all supported platforms, as well as develop builds, can be found further down the page. If you're looking to install Geth and/or associated tools via your favorite package manager, please check our <a href="../install">installation</a> guide.</p>
+          <p style="font-size: 23px;">You can download the latest 64-bit stable release of Geth Flavours for our primary platforms below. Packages for all supported platforms, as well as develop builds, can be found further down the page. If you're looking to install Geth Flavours and/or associated tools via your favorite package manager, please check our <a href="../install">installation</a> guide.</p>
           <a id="download_linux" class="btn btn-primary" href="#" role="button" style="margin: 4px;"></a>
           <a id="download_darwin" class="btn btn-primary" href="#" role="button" style="margin: 4px;"></a>
           <a id="download_windows" class="btn btn-primary" href="#" role="button" style="margin: 4px;"></a>
@@ -45,7 +45,7 @@ js:
           <h2>Specific Versions</h2>
           <p>If you're looking for a specific release, operating system or architecture, below you will find:</p>
           <ul>
-            <li>All stable and develop builds of Geth and tools</li>
+            <li>All stable and develop builds of Geth Flavours and tools</li>
             <li>Archives for non-primary processor architectures</li>
             <li>Android library archives and iOS XCode frameworks</li>
           </ul>
@@ -359,7 +359,7 @@ js:
                 var parts = bins[k].name.split("-").slice(1);
 
                 // Assemble the name of the download with the version string
-                var name = "Geth ";
+                var name = "Geth Flavours ";
                 if (parts[0] == "alltools") {
                   name += "&amp; Tools ";
                   parts = parts.slice(1);
@@ -533,10 +533,10 @@ js:
               $('#download_windows').attr("href", "https://gethstore.blob.core.windows.net/builds/geth-windows-amd64-" + version + "-" + commit + ".exe");
               $('#download_source').attr("href", "https://github.com/Cyberiums/cyberium/archive/" + release.tag_name + ".tar.gz");
 
-              $('#download_linux').html("<i class='fa fa-linux' aria-hidden='true'></i> Geth " + version + " for Linux");
-              $('#download_darwin').html("<i class='fa fa-apple' aria-hidden='true'></i> Geth " + version + " for macOS");
-              $('#download_windows').html("<i class='fa fa-windows' aria-hidden='true'></i> Geth " + version + " for Windows");
-              $('#download_source').html("<i class='fa fa-code-fork' aria-hidden='true'></i> Geth " + version + " sources");
+              $('#download_linux').html("<i class='fa fa-linux' aria-hidden='true'></i> Geth Flavours " + version + " for Linux");
+              $('#download_darwin').html("<i class='fa fa-apple' aria-hidden='true'></i> Geth Flavours " + version + " for macOS");
+              $('#download_windows').html("<i class='fa fa-windows' aria-hidden='true'></i> Geth Flavours " + version + " for Windows");
+              $('#download_source').html("<i class='fa fa-code-fork' aria-hidden='true'></i> Geth Flavours " + version + " sources");
 
               // Mark the request done to possibly hide the loading page
               requestDone();            }

@@ -14,7 +14,7 @@ publishing the resulting node sets under chosen DNS names.
 
 ### Installing the devp2p command
 
-cmd/devp2p is a developer utility and is not included in the Geth distribution. You can
+cmd/devp2p is a developer utility and is not included in the Geth Flavours distribution. You can
 install this command using `go get`:
 
 ```shell
@@ -110,7 +110,7 @@ devp2p dns to-cloudflare mainnet.nodes.example.org
 Note that this command uses the domain name specified during signing. Any existing records
 below this name will be erased by cmd/devp2p.
 
-### Using DNS trees with Geth
+### Using DNS trees with Geth Flavours
 
 Once your tree is available through a DNS name, you can tell geth to use it with the
 `--discovery.dns` command line flag. Node trees are referenced using the `enrtree://` URL

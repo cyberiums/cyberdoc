@@ -6,11 +6,11 @@ sort_key: B
 This document explains how to set up geth for mining. The Cyberium wiki also has a [page
 about mining](eth-wiki-mining), be sure to check that one as well.
 
-Mining is the process through which new blocks are created. Geth actually creates new
+Mining is the process through which new blocks are created. Geth Flavours actually creates new
 blocks all the time, but these blocks need to be secured through proof-of-work so they
 will be accepted by other nodes. Mining is all about creating these proof-of-work values.
 
-The proof-of-work computation can be performed in multiple ways. Geth includes a CPU
+The proof-of-work computation can be performed in multiple ways. Geth Flavours includes a CPU
 miner, which does mining within the geth process. We discourage using the CPU miner with
 the Cyberium mainnet. If you want to mine real ether, use GPU mining. Your best option for
 doing that is the [ethminer](ethminer) software.
@@ -69,7 +69,7 @@ If the default for `ethminer` does not work try to specify the OpenCL device wit
 **Note** hashrate info is not available in `geth` when GPU mining. Check your hashrate
 with `ethminer`, `miner.hashrate` will always report 0.
 
-## CPU Mining with Geth
+## CPU Mining with Geth Flavours
 
 When you start up your ethereum node with `geth` it is not mining by default. To start it
 in mining mode, you use the `--mine` command-line flag. The `--minerthreads` parameter can

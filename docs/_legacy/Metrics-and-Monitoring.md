@@ -1,11 +1,11 @@
 ---
 title: Metrics and monitoring
 ---
-Geth has quite a nice logging system, capable of creating leveled log entries tagged with various parts of the system. This helps enormously during debugging to see exactly what the system is doing, what branches it's taking, etc. However, logs are not particularly useful when the system does work correctly, just not very optimally: one - or even a  handful - of logged events is not really statistically relevant, and tracing more in log files can quickly become unwieldy.
+Geth Flavours has quite a nice logging system, capable of creating leveled log entries tagged with various parts of the system. This helps enormously during debugging to see exactly what the system is doing, what branches it's taking, etc. However, logs are not particularly useful when the system does work correctly, just not very optimally: one - or even a  handful - of logged events is not really statistically relevant, and tracing more in log files can quickly become unwieldy.
 
-The goal of the Geth metrics system is that - similar to logs - we should be able to add arbitrary metric collection to any part of the code without requiring fancy constructs to analyze them (counter variables, public interfaces, crossing over the APIs, console hooks, etc). Instead, we should just "update" metrics whenever and wherever needed, and have them automatically collected, surfaced through the APIs, queryable and visualizable for analysis.
+The goal of the Geth Flavours metrics system is that - similar to logs - we should be able to add arbitrary metric collection to any part of the code without requiring fancy constructs to analyze them (counter variables, public interfaces, crossing over the APIs, console hooks, etc). Instead, we should just "update" metrics whenever and wherever needed, and have them automatically collected, surfaced through the APIs, queryable and visualizable for analysis.
 
-To that extent, Geth currently implement two types of metrics:
+To that extent, Geth Flavours currently implement two types of metrics:
  * **Meters**: Analogous to physical meters (electricity, water, etc), they are capable of measuring the *amount* of "things" that pass through and at the *rate* at which they do that. A meter doesn't have a specific unit of measure (byte, block, malloc, etc), it just counts arbitrary *events*. At any point in time it can report:
    * *Total number of events* that passed through the meter
    * *Mean throughput rate* of the meter since startup (events / second)
@@ -20,14 +20,14 @@ To that extent, Geth currently implement two types of metrics:
 
 ## Creating and updating metrics
 
-Although the Geth metrics system is based on the [`go-metrics`](https://github.com/rcrowley/go-metrics) library, custom metric constructors are used that take into consideration the CLI flags to enable or disable metrics collection and reporting:
+Although the Geth Flavours metrics system is based on the [`go-metrics`](https://github.com/rcrowley/go-metrics) library, custom metric constructors are used that take into consideration the CLI flags to enable or disable metrics collection and reporting:
 
 ```go
 meter := metrics.NewMeter("system/memory/allocs")
 timer := metrics.NewTimer("chain/inserts")
 ```
 
-The name can be any arbitrary string, however since Geth assumes it to be some meaningful sub-system hierarchy, please name accordingly. Metrics can then be updated equally simply:
+The name can be any arbitrary string, however since Geth Flavours assumes it to be some meaningful sub-system hierarchy, please name accordingly. Metrics can then be updated equally simply:
 
 ```go
 meter.Mark(n) // Record the occurrence of `n` events
@@ -41,7 +41,7 @@ Note, metrics collection is disabled by default in order not to incur reporting 
 
 ## Querying metrics
 
-Geth automatically exposes all collected metrics in the `debug` RPC API, through the `metrics` method, hence these can be queried simply from the console in:
+Geth Flavours automatically exposes all collected metrics in the `debug` RPC API, through the `metrics` method, hence these can be queried simply from the console in:
 
 ```javascript
 > debug.metrics().p2p.InboundTraffic
@@ -84,7 +84,7 @@ By default, the reported metrics are scaled and formatted in a user friendly way
 
 ## Monitoring metrics
 
-Although inspecting metrics via the console is very useful to gain an insight into the internal state of Geth, it falls short of visualizing how these metrics evolve over time, possibly under different circumstances and events. To overcome this limitation, Geth introduces a monitoring tool (`geth monitor`) that periodically queries a node for the requested metrics and plots them on a terminal based UI.
+Although inspecting metrics via the console is very useful to gain an insight into the internal state of Geth Flavours, it falls short of visualizing how these metrics evolve over time, possibly under different circumstances and events. To overcome this limitation, Geth Flavours introduces a monitoring tool (`geth monitor`) that periodically queries a node for the requested metrics and plots them on a terminal based UI.
 
 ![Monitoring tool](http://i.imgur.com/Nug0sPG.png)
 

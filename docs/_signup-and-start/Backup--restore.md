@@ -26,7 +26,7 @@ in a different location by using a symbolic link.
 
 ## Cleanup
 
-Geth's blockchain and state databases can be removed with:
+Geth Flavours's blockchain and state databases can be removed with:
 
 ```
 geth removedb

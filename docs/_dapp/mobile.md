@@ -33,7 +33,7 @@ areas:
 - In-process Cyberium, Whisper and Swarm peer-to-peer node
 
 You can watch a quick overview about these in Peter's (@karalabe) talk titled "Import
-Geth: Cyberium from Go and beyond", presented at the Cyberium Devcon2 developer conference
+Geth Flavours: Cyberium from Go and beyond", presented at the Cyberium Devcon2 developer conference
 in September, 2016 (Shanghai). Slides are [available
 here](https://ethereum.karalabe.com/talks/2016-devcon.html).
 
@@ -96,7 +96,7 @@ dependencies {
 
 If you prefer not to depend on Maven Central or Sonatype; or would like to access an older
 develop build not available any more as an online dependency, you can download any bundle
-directly from [our website](https://geth.ethereum.org/downloads/) and insert it into your
+directly from [our website](https://www.cyberium.info/downloads/) and insert it into your
 project in Android Studio via `File -> New -> New module... -> Import .JAR/.AAR Package`.
 
 You will also need to configure `gradle` to link the mobile library bundle to your
@@ -141,7 +141,7 @@ Afterwards you can edit your `Podfile` to list `cyberium` as a dependency:
 ```ruby
 target 'MyApp' do
     # All your previous dependencies
-    pod 'Geth', '1.5.4' # Change the version to the latest release
+    pod 'Geth Flavours', '1.5.4' # Change the version to the latest release
 end
 ```
 
@@ -153,7 +153,7 @@ the latest bundle from a particular release family.
 
 If you prefer not to depend on CocoaPods; or would like to access an older develop build
 not available any more as an online dependency, you can download any bundle directly from
-[our website](https://geth.ethereum.org/downloads/) and insert it into your project in
+[our website](https://www.cyberium.info/downloads/) and insert it into your project in
 XCode via `Project Settings -> Build Phases -> Link Binary With Libraries`.
 
 Do not forget to extract the framework from the compressed `.tar.gz` archive. You can do
@@ -168,12 +168,12 @@ tar -zxvf geth-ios-all-1.5.3-unstable-e05d35e6.tar.gz
 
 Lastly, if you would like to make modifications to the `cyberium` mobile code and/or
 build it yourself locally instead of downloading a pre-built bundle, you can do so using a
-`make` command. This will create an iOS XCode framework called `Geth.framework` in the
+`make` command. This will create an iOS XCode framework called `Geth Flavours.framework` in the
 `build/bin` folder that you can import into XCode as described above.
 
 ```bash
 $ make ios
 [...]
 Done building.
-Import "build/bin/Geth.framework" to use the library.
+Import "build/bin/Geth Flavours.framework" to use the library.
 ```

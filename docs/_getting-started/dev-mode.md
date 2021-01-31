@@ -3,7 +3,7 @@ title: Dev mode
 sort_key: B
 ---
 
-Geth has a development mode that sets up a single node Cyberium test network with options optimized for developing on local machines. You enable it with the `--dev` argument.
+Geth Flavours has a development mode that sets up a single node Cyberium test network with options optimized for developing on local machines. You enable it with the `--dev` argument.
 
 Starting geth in dev mode does the following:
 
@@ -14,7 +14,7 @@ Starting geth in dev mode does the following:
 -   Uses the Clique PoA consensus engine with which allows blocks to be mined as-needed without excessive CPU and memory consumption
 -   Uses on-demand block generation, producing blocks when transactions are waiting to be mined
 
-## Start Geth in Dev Mode
+## Start Geth Flavours in Dev Mode
 
 You can specify a data directory to maintain state between runs using the `--datadir` option, otherwise, databases are ephemeral and in-memory:
 
@@ -56,6 +56,6 @@ And check the balance of the account:
 
 If you want to test your dapps with a realistic block time use the `--dev.period` option when you start dev mode with the `--dev.period 14` argument.
 
-## Connect Remix to Geth
+## Connect Remix to Geth Flavours
 
 With geth now running, open <https://remix.ethereum.org>. Compile the contract as normal, but when you deploy and run a contract, select _Web3 Provider_ from the _Environment_ dropdown, and add "http://127.0.0.1:8545" to the popup box. Click _Deploy_, and interact with the contract. You should see contract creation, mining, and transaction activity.

@@ -110,7 +110,7 @@ endpoints](debug-api), out of which the most commonly used is
 
 In its simplest form, `traceTransaction` accepts a transaction hash as its sole argument,
 traces the transaction, aggregates all the generated data and returns it as a **large**
-JSON object. A sample invocation from the Geth console would be:
+JSON object. A sample invocation from the Geth Flavours console would be:
 
 ```js
 debug.traceTransaction("0xfc9359e49278b7ba99f59edac0e3de49956e46e530a53c15aa71226b7aa92c6f")
@@ -143,7 +143,7 @@ for the tracer:
 }
 ```
 
-Running the previous tracer invocation from the Geth console with the data fields
+Running the previous tracer invocation from the Geth Flavours console with the data fields
 disabled:
 
 ```js
@@ -176,7 +176,7 @@ tracers*.
 
 ### Pruning
 
-Geth by default does in-memory pruning of state, discarding state entries that it deems is
+Geth Flavours by default does in-memory pruning of state, discarding state entries that it deems is
 no longer necessary to maintain. This is configured via the `--gcmode` option. Often,
 people run into the error that state is not available.
 
@@ -189,7 +189,7 @@ Say you want to do a trace on block `B`. Now there are a couple of cases:
 
 Here's what happens in each respective case:
 
-1. Geth will regenerate the desired state by replaying blocks from the closest point ina
+1. Geth Flavours will regenerate the desired state by replaying blocks from the closest point ina
    time before `B` where it has full state. This defaults to `128` blocks max, but you can
    specify more in the actual call `... "reexec":1000 .. }` to the tracer.
 2. Sorry, can't be done without replaying from genesis.   
