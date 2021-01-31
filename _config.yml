@@ -36,49 +36,49 @@ collections:
     caption: Signup and Build Frontend
     sidebar_index: 2
     frontpage: _signup-and-start/signup-studio-account.md
+  org:
+    output: true
+    permalink: docs/:collection/:slug
+    caption: Setup Organization
+    sidebar_index: 3
+    frontpage: _org/Organization-Overview.md
   interface:
     output: true
     permalink: docs/:collection/:slug
     caption: Using Geth Flavours
-    sidebar_index: 3
+    sidebar_index: 4
   interface2:
     output: true
     permalink: docs/:collection/:slug
     caption: Using Fabric Flavours
-    sidebar_index: 4
+    sidebar_index: 5
   app:
     output: true
     permalink: docs/:collection/:slug
     caption: For App Developers
     frontpage: _app/native.md
-    sidebar_index: 5
+    sidebar_index: 6
   public:
     output: true
     permalink: docs/:collection/:slug
     caption: Hosting Public App
     frontpage: _public/server.md
-    sidebar_index: 6
+    sidebar_index: 7
   wallet:
     output: true
     permalink: docs/:collection/:slug
     caption: Wallets
     frontpage: _wallet/devguide.md
-    sidebar_index: 7
+    sidebar_index: 8
   bandwidth:
     output: true
     permalink: docs/:collection/:slug
     caption: Creating Ultra High Bandwidth
-    sidebar_index: 8
+    sidebar_index: 9
     frontpage: _bandwidth/Tutorial.md
   partners:
     output: true
     permalink: docs/:collection/:slug
     caption: Building Exchange & Partnerships
-    sidebar_index: 9
-    frontpage: _partners/Whisper-Overview.md
-  org:
-    output: true
-    permalink: docs/:collection/:slug
-    caption: Setup Organization
     sidebar_index: 10
-    frontpage: _org/Organization-Overview.md
+    frontpage: _partners/Whisper-Overview.md
