@@ -46,11 +46,11 @@ collections:
     permalink: docs/:collection/:slug
     caption: Using Fabric Flavours
     sidebar_index: 4
-  dapp:
+  app:
     output: true
     permalink: docs/:collection/:slug
-    caption: For dApp Developers
-    frontpage: _dapp/native.md
+    caption: For App Developers
+    frontpage: _app/native.md
     sidebar_index: 5
   rpc:
     output: true
