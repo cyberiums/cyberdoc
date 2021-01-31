@@ -1,5 +1,5 @@
 ---
-title: Register for Operations Account
+title: Signup for Operations Account
 sort_key: A
 ---
 
