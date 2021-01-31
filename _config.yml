@@ -55,7 +55,7 @@ collections:
   public:
     output: true
     permalink: docs/:collection/:slug
-    caption: JSON RPC APIs
+    caption: Hosting Public App
     frontpage: _public/server.md
     sidebar_index: 6
   wallet:
