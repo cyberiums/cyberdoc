@@ -61,18 +61,18 @@ collections:
   wallet:
     output: true
     permalink: docs/:collection/:slug
-    caption: For Geth Flavours Developers
+    caption: Wallets
     frontpage: _wallet/devguide.md
     sidebar_index: 7
   bandwidth:
     output: true
     permalink: docs/:collection/:slug
-    caption: Clef
+    caption: High Bandwidth
     sidebar_index: 8
     frontpage: _bandwidth/Tutorial.md
-  whisper:
+  partners:
     output: true
     permalink: docs/:collection/:slug
-    caption: Whisper
+    caption: Building Exchange & Partnerships
     sidebar_index: 9
-    frontpage: _whisper/Whisper-Overview.md
+    frontpage: _partners/Whisper-Overview.md
