@@ -67,7 +67,7 @@ collections:
   bandwidth:
     output: true
     permalink: docs/:collection/:slug
-    caption: High Bandwidth
+    caption: Creating Ultra High Bandwidth
     sidebar_index: 8
     frontpage: _bandwidth/Tutorial.md
   partners:
