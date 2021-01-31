@@ -1,5 +1,5 @@
 ---
-title: Frontend: Create Scripts
+title: Frontend: Create Screens
 sort_key: C
 ---
 <!-- TODO: Maybe move? -->

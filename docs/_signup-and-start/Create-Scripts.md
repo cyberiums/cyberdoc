@@ -1,5 +1,5 @@
 ---
-title: Frontend: Draw BPMN Workflow Diagram
+title: Frontend: Create Scripts
 sort_key: B
 ---
 <!-- TODO: Maybe move? -->
