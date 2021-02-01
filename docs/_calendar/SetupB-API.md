@@ -1,5 +1,5 @@
 ---
-title: Extend App with APIs
+title: Extend with APIs
 sort_key: B
 ---
 
