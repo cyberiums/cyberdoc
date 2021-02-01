@@ -1,5 +1,5 @@
 ---
-title: Signup for Operations Account
+title: Signup for Frontend Account
 sort_key: A
 ---
 
