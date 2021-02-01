@@ -65,3 +65,8 @@ collections:
     caption: Building Exchange & Partnerships
     sidebar_index: 10
     frontpage: _partners/Partner-Overview.md
+  calendar:
+    output: true
+    permalink: docs/:collection/:slug
+    caption: Sample Calendar App
+    sidebar_index: 11
