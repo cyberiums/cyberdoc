@@ -45,13 +45,8 @@ collections:
   interface:
     output: true
     permalink: docs/:collection/:slug
-    caption: Blockchain- Geth Flavours
+    caption: Geth Blockchain Flavours
     sidebar_index: 4
-  interface2:
-    output: true
-    permalink: docs/:collection/:slug
-    caption: Blockchain- Fabric Flavours
-    sidebar_index: 5
   bandwidth:
     output: true
     permalink: docs/:collection/:slug
