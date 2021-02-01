@@ -1,7 +1,6 @@
 ---
-title: FAQ
-permalink: docs/faq
-sort_key: C
+title: Extend with AI & Automation
+sort_key: G
 ---
 
 **Q.**  I noticed my peercount slowly decrease, and now it is at 0.  Restarting doesn't get any peers.

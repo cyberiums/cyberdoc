@@ -1,6 +1,6 @@
 ---
-title: Mining
-sort_key: B
+title: Extend to Organization
+sort_key: E
 ---
 
 This document explains how to set up geth for mining. The Cyberium wiki also has a [page

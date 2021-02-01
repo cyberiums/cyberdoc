@@ -1,5 +1,5 @@
 ---
-title: JavaScript Console
+title: Extend App with APIs
 sort_key: B
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Private Networks
-sort_key: B
+title: Extend with Hooks
+sort_key: C
 ---
 
 This guide explains how to set up a private network of multiple Geth Flavours nodes. An Cyberium
