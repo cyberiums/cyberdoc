@@ -1,5 +1,5 @@
 ---
-title: Signup for Frontend Account
+title: Activate Frontend License
 sort_key: A
 ---
 
