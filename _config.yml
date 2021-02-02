@@ -56,7 +56,7 @@ collections:
   wallet:
     output: true
     permalink: docs/:collection/:slug
-    caption: Wallets
+    caption: Wallets & Money
     frontpage: _wallet/genguide.md
     sidebar_index: 9
   partners:
